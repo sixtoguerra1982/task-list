@@ -3,6 +3,17 @@
     <label for="detail">Detail</label>
     <input name="detail" type="text" class="form-control" id="detail" aria-describedby="emailHelp" required>
   </div>
+  <div class="form-group">
+    <label for="price">Price</label>
+    <input name="price" type="number" class="form-control" id="price">
+  </div>
   
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
+
+<ul>
+    <%  @tasks.each do |task| %>
+        <li><%=  task.detail %></li>
+    <% end %>
+</ul>

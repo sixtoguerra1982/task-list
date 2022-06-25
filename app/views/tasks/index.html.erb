@@ -1,0 +1,18 @@
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Detail</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <%  @tasks.each do |task| %>
+            <tr>
+                <td><%= task.id %></td>
+                <td><%= task.detail %></td>
+                <td><%= task.price %></td>
+            </tr>
+        <% end %>
+    </table>
+</div>
